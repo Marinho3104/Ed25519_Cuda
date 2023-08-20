@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "memory": "cpp",
+        "ratio": "cpp",
+        "cstdint": "cpp",
+        "cmath": "cpp"
+    }
+}

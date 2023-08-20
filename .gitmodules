@@ -1,0 +1,3 @@
+[submodule "crypto/Sha512"]
+	path = crypto/Sha512
+	url = https://github.com/Marinho3104/SHA512_Cuda.git

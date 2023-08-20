@@ -1,10 +1,12 @@
 
 ## PATHs ##
+crypto_path := ./../crypto/
 root_path := ./../
 own_path := ./
 
 src_path := $(root_path)src/
 output_path :=  $(own_path)output/
+sha512_path := $(crypto_path)Sha512/src/
 
 ## COMPILER FLAGS ##
 nvcc := nvcc
@@ -23,6 +25,9 @@ all:
 
 	# Copy src files into root path
 	cp $(src_path)*.cu $(src_path)*.cuh $(output_path)
+
+	# Copy sha512 files into root path
+	cp $(sha512_path)*.cu $(sha512_path)*.cuh $(output_path)
 
 	# Nvcc compilation
 	$(nvcc) $(flags) $(compilation_files)
